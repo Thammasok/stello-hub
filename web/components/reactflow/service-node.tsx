@@ -1,6 +1,6 @@
 import { Node, NodeProps } from '@xyflow/react'
 
-type ServiceNode = Node<{ number: number }, 'number'>
+type ServiceNode = Node<{ label: string; number: number }>
 
 const ServiceNode = ({ data }: NodeProps<ServiceNode>) => {
   return (

@@ -5,10 +5,16 @@ import Link from 'next/link'
 import {
   BookOpen,
   Bot,
+  BotIcon,
+  ChartColumnIcon,
+  CheckSquare2,
   Frame,
   Layers3Icon,
   LifeBuoy,
+  MailIcon,
   Map,
+  MonitorIcon,
+  NotebookPenIcon,
   PieChart,
   Send,
   Settings2,
@@ -36,43 +42,30 @@ const data = {
   },
   navMain: [
     {
-      title: 'Playground',
-      url: '#',
-      icon: SquareTerminal,
+      title: 'Dashboard',
+      url: '/dashboard',
+      icon: MonitorIcon,
       isActive: true,
-      items: [
-        {
-          title: 'History',
-          url: '#',
-        },
-        {
-          title: 'Starred',
-          url: '#',
-        },
-        {
-          title: 'Settings',
-          url: '#',
-        },
-      ],
     },
     {
-      title: 'Models',
-      url: '#',
-      icon: Bot,
-      items: [
-        {
-          title: 'Genesis',
-          url: '#',
-        },
-        {
-          title: 'Explorer',
-          url: '#',
-        },
-        {
-          title: 'Quantum',
-          url: '#',
-        },
-      ],
+      title: 'Tasks',
+      url: '/tasks',
+      icon: CheckSquare2,
+    },
+    {
+      title: 'Notes',
+      url: '/notes',
+      icon: NotebookPenIcon,
+    },
+    {
+      title: 'Email',
+      url: '/email',
+      icon: MailIcon,
+    },
+    {
+      title: 'Reports',
+      url: '/reports',
+      icon: ChartColumnIcon,
     },
     {
       title: 'Documentation',
@@ -135,18 +128,36 @@ const data = {
   ],
   projects: [
     {
-      name: 'Design Engineering',
-      url: '#',
-      icon: Frame,
+      name: 'AI Chatbot',
+      url: '/projects/ai-chatbot',
+      icon: BotIcon,
+      items: [
+        {
+          title: 'Features',
+          url: '/projects/ai-chatbot',
+        },
+        {
+          title: 'Documentation',
+          url: '/projects/ai-chatbot/docs',
+        },
+        {
+          title: 'Releases',
+          url: '/projects/ai-chatbot/releases',
+        },
+        {
+          title: 'Supports',
+          url: '/projects/ai-chatbot/support',
+        },
+      ],
     },
     {
-      name: 'Sales & Marketing',
-      url: '#',
+      name: 'Nutshell',
+      url: '/projects/nutshell',
       icon: PieChart,
     },
     {
       name: 'Travel',
-      url: '#',
+      url: '/projects/travel',
       icon: Map,
     },
   ],
